@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
     ImageView arms, ears, eyes, eyebrows, glasses, hat, mouth, mustache, nose, shoes;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,9 +43,6 @@ public class MainActivity extends AppCompatActivity {
         nose=(ImageView)findViewById(R.id.imageViewNose);
         cbMouth=(CheckBox)findViewById(R.id.checkBoxMouth);
         mouth=(ImageView)findViewById(R.id.imageViewMouth);
-
-
-
     }
 
     @Override
@@ -141,7 +137,6 @@ public class MainActivity extends AppCompatActivity {
                     mouth.setVisibility(View.INVISIBLE);
                 }
                 break;
-
         }
     }
 
@@ -156,7 +151,6 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.action_settings) {
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 }
