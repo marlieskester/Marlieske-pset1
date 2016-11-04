@@ -68,53 +68,79 @@ public class MainActivity extends AppCompatActivity {
                 else {
                     arms.setVisibility(View.INVISIBLE);
                 }
+                break;
             case R.id.checkBoxEars:
                 if (check) {
                     ears.setVisibility(View.VISIBLE);
                 }
                 else {
                     ears.setVisibility(View.INVISIBLE);
-
-                    case R.id.checkBoxEyes:
-                if (check)
+                }
+                break;
+            case R.id.checkBoxEyes:
+                if (check) {
                     eyes.setVisibility(View.VISIBLE);
-                else
+                }
+                else {
                     eyes.setVisibility(View.INVISIBLE);
+                }
+                break;
             case R.id.checkBoxEyebrows:
-                if (check)
+                if (check) {
                     eyebrows.setVisibility(View.VISIBLE);
-                else
+                }
+                else {
                     eyebrows.setVisibility(View.INVISIBLE);
+                }
+                break;
             case R.id.checkBoxHat:
-                if (check)
+                if (check) {
                     hat.setVisibility(View.VISIBLE);
-                else
+                }
+                else {
                     hat.setVisibility(View.INVISIBLE);
+                }
+                break;
             case R.id.checkBoxShoes:
-                if (check)
+                if (check) {
                     shoes.setVisibility(View.VISIBLE);
-                else
+                }
+                else {
                     shoes.setVisibility(View.INVISIBLE);
+                }
+                break;
             case R.id.checkBoxMustache:
-                if (check)
+                if (check) {
                     mustache.setVisibility(View.VISIBLE);
-                else
+                }
+                else {
                     mustache.setVisibility(View.INVISIBLE);
+                }
+                break;
             case R.id.checkBoxGlasses:
-                if (check)
+                if (check) {
                     glasses.setVisibility(View.VISIBLE);
-                else
+                }
+                else {
                     glasses.setVisibility(View.INVISIBLE);
+                }
+                break;
             case R.id.checkBoxNose:
-                if (check)
+                if (check) {
                     nose.setVisibility(View.VISIBLE);
-                else
+                }
+                else {
                     nose.setVisibility(View.INVISIBLE);
+                }
+                break;
             case R.id.checkBoxMouth:
-                if (check)
+                if (check) {
                     mouth.setVisibility(View.VISIBLE);
-                else
+                }
+                else {
                     mouth.setVisibility(View.INVISIBLE);
+                }
+                break;
 
         }
     }

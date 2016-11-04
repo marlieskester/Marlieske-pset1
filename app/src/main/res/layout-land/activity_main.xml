@@ -43,6 +43,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/checkBoxEyes"
+                android:onClick="onCheckboxClicked"
                 android:textAppearance="@android:style/TextAppearance.Medium"
                 android:layout_alignTop="@+id/checkBoxGlasses"
                 android:layout_alignParentRight="true"
@@ -55,6 +56,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/checkBoxNose"
+                android:onClick="onCheckboxClicked"
                 android:textAppearance="@android:style/TextAppearance.Medium"
                 android:layout_below="@+id/checkBoxEyes"
                 android:layout_alignLeft="@+id/checkBoxEyes"
@@ -66,6 +68,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/checkBoxShoes"
                 android:textAppearance="@android:style/TextAppearance.Medium"
+                android:onClick="onCheckboxClicked"
                 android:layout_below="@+id/checkBoxNose"
                 android:layout_alignLeft="@+id/checkBoxNose"
                 android:layout_alignStart="@+id/checkBoxNose" />
@@ -76,6 +79,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/checkBoxHat"
                 android:textAppearance="@android:style/TextAppearance.Medium"
+                android:onClick="onCheckboxClicked"
                 android:visibility="visible"
                 android:layout_below="@+id/checkBoxShoes"
                 android:layout_alignLeft="@+id/checkBoxShoes"
@@ -86,6 +90,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/checkBoxMouth"
+                android:onClick="onCheckboxClicked"
                 android:textAppearance="@android:style/TextAppearance.Medium"
                 android:layout_below="@+id/checkBoxHat"
                 android:layout_alignRight="@+id/checkBoxShoes"
@@ -95,6 +100,7 @@
                 android:text="Glasses"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
                 android:id="@+id/checkBoxGlasses"
                 android:textAppearance="@android:style/TextAppearance.Medium"
                 android:visibility="visible"
@@ -106,6 +112,7 @@
                 android:text="Ears"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
                 android:id="@+id/checkBoxEars"
                 android:textAppearance="@android:style/TextAppearance.Medium"
                 android:layout_below="@+id/checkBoxGlasses"
@@ -117,6 +124,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/checkBoxMustache"
+                android:onClick="onCheckboxClicked"
                 android:textAppearance="@android:style/TextAppearance.Medium"
                 android:visibility="visible"
                 android:layout_below="@+id/checkBoxEars"
@@ -128,6 +136,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/checkBoxArms"
+                android:onClick="onCheckboxClicked"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:layout_below="@+id/checkBoxMustache"
                 android:layout_toRightOf="@+id/checkBoxShoes"
@@ -138,6 +147,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/checkBoxEyebrows"
+                android:onClick="onCheckboxClicked"
                 android:textAppearance="@android:style/TextAppearance.Medium"
                 android:layout_below="@+id/checkBoxArms"
                 android:layout_alignRight="@+id/checkBoxMustache"
@@ -148,20 +158,22 @@
                 android:layout_height="wrap_content"
                 android:text="Dress Mr Potatohead!"
                 android:textAppearance="@android:style/TextAppearance.Large"
+                android:onClick="onCheckboxClicked"
                 android:id="@+id/textView"
-                android:layout_marginTop="66dp"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:layout_marginBottom="21dp"
+                android:layout_above="@+id/checkBoxEyes"
+                android:layout_alignLeft="@+id/checkBoxEyes"
+                android:layout_alignStart="@+id/checkBoxEyes" />
 
         </RelativeLayout>
     </RelativeLayout>
 
     <RelativeLayout
-        android:layout_width="336dp"
-        android:layout_height="330dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_width="308dp"
+        android:layout_height="286dp"
+        android:layout_alignParentLeft="true">
+
+
 
         <ImageView
             android:layout_width="wrap_content"
@@ -176,6 +188,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/shoes"
+            android:visibility="invisible"
             android:id="@+id/imageViewShoes" />
 
         <ImageView
@@ -239,10 +252,7 @@
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/eyes"
             android:id="@+id/imageViewEyes"
-            android:visibility="invisible"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:visibility="invisible" />
 
     </RelativeLayout>
 
